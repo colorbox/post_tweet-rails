@@ -1,0 +1,7 @@
+<% if flash[:error].present? %>
+  <%= flash[:error] %>
+<% end %>
+<%= form_tag tweets_path do %>
+  <%= text_area_tag :text %>
+  <%= submit_tag %>
+<% end %>
